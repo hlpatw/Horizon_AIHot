@@ -60,7 +60,7 @@ title: AIHOT Radar
     </div>
 
     <div class="digest-layout">
-      <article id="latest-digest" class="embedded-digest">
+      <article id="latest-digest" class="embedded-digest" data-edition="{{ latest_zh.date | date: '%Y-%m-%d' }}">
         {{ latest_zh.content }}
       </article>
       <aside class="digest-aside" aria-label="资讯详情">
@@ -109,7 +109,7 @@ title: AIHOT Radar
         <button type="button" data-filter="industry">Industry</button>
       </div>
       <div class="digest-layout">
-        <article id="latest-digest-en" class="embedded-digest">{{ latest_en.content }}</article>
+        <article id="latest-digest-en" class="embedded-digest" data-edition="{{ latest_en.date | date: '%Y-%m-%d' }}">{{ latest_en.content }}</article>
         <aside class="digest-aside" aria-label="Story details">
           <div id="detail-panel-en" class="detail-panel" aria-live="polite">
             <div class="detail-empty">
